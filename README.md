@@ -31,6 +31,12 @@ gSTC-ISP是一款在Linux下的图形化的串口ISP下载工具。
 
 #### 安装说明
 ---
+安装前请执行以下命令查看vte文件夹是否存在：
+```ls -l /usr/include/vte*```
+
+若不存在，则执行以下命令进行安装：
+```~$ sudo aptitude install libvte-dev ```
+
 
 
 
