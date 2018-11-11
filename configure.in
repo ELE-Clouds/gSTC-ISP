@@ -1,0 +1,32 @@
+#                                               -*- Autoconf -*-
+# Process this file with autoconf to produce a configure script.
+
+AC_PREREQ(2.61)
+#AC_INIT(FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)
+AC_INIT(gSTCISP, 0.1)
+AM_INIT_AUTOMAKE(gSTCISP, 0.1)
+AC_CONFIG_SRCDIR([src/main.h])
+#AC_CONFIG_HEADER([config.h])
+AM_CONFIG_HEADER([config.h])
+
+# Checks for programs.
+#AC_PROG_CC
+AM_PROG_CC_C_O
+
+
+# Checks for libraries.
+
+AM_PATH_GTK_2_0(2.0.0,,AC_MSG_ERROR( GTK+ 2.0.0 is required, but not found.))
+
+
+
+# Checks for header files.
+
+# Checks for typedefs, structures, and compiler characteristics.
+
+# Checks for library functions.
+
+AC_OUTPUT([
+Makefile
+src/Makefile
+])
