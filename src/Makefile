@@ -69,7 +69,7 @@ AUTOMAKE = ${SHELL} /home/walnut/src/gSTC-ISP/missing --run automake-1.10
 AWK = gawk
 CC = gcc
 CCDEPMODE = depmode=gcc3
-CFLAGS = -g -O2
+CFLAGS = -g -O2 -I /usr/include/vte/
 CPPFLAGS = 
 CYGPATH_W = echo
 DEFS = -DHAVE_CONFIG_H
